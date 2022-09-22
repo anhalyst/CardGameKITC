@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kings.gui.RegistrierungController">
+        <PasswordField fx:id="passwort" layoutX="217.0" layoutY="117.0" prefHeight="20.0" prefWidth="250.0" />
+        <TextField fx:id="benutzername" layoutX="217.0" layoutY="70.0" prefHeight="26.0" prefWidth="250.0" />
+        <Text layoutX="38.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Benutzername">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="42.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwort">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Button fx:id="registrieren" layoutX="42.0" layoutY="248.0" mnemonicParsing="false" onAction="#onRegistrierenClicked" prefHeight="40.0" prefWidth="100.0" text="Registrieren">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+   <Label layoutX="85.0" layoutY="10.0" prefHeight="27.0" prefWidth="114.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="back" layoutX="376.0" layoutY="248.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="40.0" prefWidth="100.0" text="Zurück">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Text layoutX="38.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host IP">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="ipaddress" layoutX="217.0" layoutY="23.0" prefHeight="26.0" prefWidth="250.0" />
+   <Label fx:id="infoText" layoutX="220.0" layoutY="140.0" prefHeight="20.0" prefWidth="271.0" />
+   <Text layoutX="38.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwort wiederholen">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <PasswordField fx:id="passwort_repeated" layoutX="217.0" layoutY="161.0" prefHeight="20.0" prefWidth="250.0" />
+   <Button layoutX="182.0" layoutY="248.0" mnemonicParsing="false" onAction="#onNBClicked" prefHeight="40.0" prefWidth="160.0" text="Nutzungsbedingunen">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Text layoutX="36.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durch die Registrierung bestätigt der Nutzer, dass er allen Nutzungbedingungen gelesen hat und diesen zustimmt." textAlignment="CENTER" wrappingWidth="452.607421875">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+</AnchorPane>

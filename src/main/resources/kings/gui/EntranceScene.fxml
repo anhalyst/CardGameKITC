@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="260.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="kings.gui.EntranceController">
+   <Label layoutX="62.0" layoutY="22.0" text="KINGS IN THE CORNER">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+   </Label>
+   <Button fx:id="anmelden" layoutX="115.0" layoutY="76.0" mnemonicParsing="false" onAction="#onAnmeldenClicked"
+           text="Anmelden"/>
+   <Button fx:id="registrieren" layoutX="110.0" layoutY="176.0" mnemonicParsing="false"
+           onAction="#onRegistrierenClicked" text="Registrieren"/>
+   <Label layoutX="138.0" layoutY="130.0" text="oder"/>
+</AnchorPane>
